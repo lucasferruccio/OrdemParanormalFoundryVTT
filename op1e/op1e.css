@@ -1,0 +1,307 @@
+.item .editor {
+  height: 100%;
+}
+.item .item_body {
+  text-align: center;
+}
+.item .tab {
+  height: 100px;
+}
+.item .crit1 {
+  min-width: 100px;
+}
+.item .inputBox {
+  max-width: 30px;
+}
+.item .descricao {
+  text-align: left;
+}
+.header {
+  border-bottom: 1px solid #adaaaa;
+  height: 165px;
+  margin-bottom: 5px;
+}
+.header p {
+  margin: -3px;
+}
+.header input[type="text"] {
+  background: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0;
+  border-radius: 0%;
+  height: auto;
+  width: auto;
+}
+.header .profile {
+  width: 160px;
+  height: 160px;
+  border: none;
+  border-right: 1px solid #adaaaa;
+  float: left;
+  padding-right: 4px;
+}
+.header .headerInfo {
+  height: 160px;
+  width: calc(100% - 160px);
+  float: left;
+}
+.header .firstRowHeader {
+  white-space: nowrap;
+  border-bottom: 1px solid #adaaaa;
+  height: 50px;
+  margin-left: 4px;
+}
+.header .charName {
+  width: calc(80%);
+  float: left;
+  padding: 3px;
+}
+.header .nex {
+  width: calc(20%);
+  float: right;
+  background-color: rgba(193, 190, 176, 0.71);
+  text-align: center;
+  padding: 6px 3px 3px 3px;
+  margin: 0px;
+  border-radius: 4px;
+}
+.header .secondRowHeader {
+  white-space: nowrap;
+  border-bottom: 1px solid #adaaaa;
+  height: 34px;
+  margin-left: 4px;
+  margin-top: 4px;
+  padding-top: 4px;
+  text-align: center;
+}
+.header .clearInput {
+  max-width: 24%;
+}
+.header .thirdRowHeader {
+  height: 70px;
+  margin-left: 4px;
+  margin-top: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: center;
+}
+.header .status {
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #858383;
+}
+.header .outroName {
+  border-bottom: 1px;
+  border-bottom-width: 4px;
+}
+.header .linha {
+  max-width: 150px;
+}
+.header .inputBox {
+  max-width: 30px;
+}
+.atributos {
+  height: 75px;
+  width: 100%;
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+}
+.atributos input[type="text"] {
+  background: rgba(0, 0, 0, 0);
+  border-top-width: 0px;
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0;
+  border-radius: 0%;
+  height: auto;
+  width: 25%;
+}
+.atributos .atr {
+  height: 100%;
+  width: 20%;
+  border-right: 1px solid #a9a6a6;
+  text-align: center;
+  float: left;
+}
+.atributos .parteInferior {
+  font-size: 25px;
+}
+.periciasLista {
+  padding: 0;
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  width: 44%;
+  float: left;
+}
+.periciasLista input[type="text"] {
+  border: none;
+  background: none;
+  width: 25px;
+  height: 17px;
+  margin-left: 16px;
+}
+.periciasLista li {
+  height: 17px;
+  padding-left: 5px;
+  text-align: start;
+}
+.periciasLista li:nth-child(even) {
+  background-color: #c9c7b8;
+}
+.periciasLista .nome {
+  width: 70%;
+  float: left;
+}
+.periciasLista .mod {
+  width: 30%;
+  float: left;
+}
+.outros {
+  width: 55%;
+  float: right;
+  height: 350px;
+  margin: 7px 0px 7px 7px;
+}
+.outros input[type="text"] {
+  border: none;
+  background: none;
+  width: 50%;
+}
+.outros h3 {
+  text-align: center;
+}
+.outros .editor {
+  min-height: 50px;
+}
+.outros .caracteristicas {
+  border: 1px solid #adaaaa;
+  border-radius: 2px;
+  height: 89.5%;
+  margin-bottom: 7px;
+  padding: 4px;
+}
+.outros .proficiencias {
+  border: 1px solid #adaaaa;
+  border-radius: 2px;
+  height: 50%;
+  padding: 4px;
+}
+.inventario .invHeader .limite {
+  text-align: center;
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.05);
+}
+.inventario .invHeader .limite input[type="text"] {
+  padding: 0;
+  border: none;
+  background: none;
+  width: 25px;
+  text-align: center;
+}
+.inventario .invHeader .itens {
+  border: 1.5px solid #a9a6a6;
+  border-radius: 2px;
+  margin-top: 7px;
+  height: 410px;
+}
+.inventario .invHeader .itens hr {
+  margin: 4px;
+}
+.inventario .invHeader .itens .inv1 {
+  border-right: 1px solid #a9a6a6;
+  border-radius: 2px;
+  float: left;
+  width: 30%;
+  height: 370px;
+  text-align: center;
+}
+.inventario .invHeader .itens .inv2 {
+  border-right: 1px solid #a9a6a6;
+  border-radius: 2px;
+  float: left;
+  width: 40%;
+  height: 370px;
+  text-align: center;
+}
+.inventario .invHeader .itens .inv3 {
+  float: left;
+  width: 30%;
+  height: 370px;
+  text-align: center;
+}
+.poderes h4 {
+  text-align: center;
+}
+.poderes .editor {
+  height: 93%;
+}
+.poderes .classe {
+  float: left;
+  width: 49%;
+  height: 430px;
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  padding: 4px;
+}
+.poderes .paranormal {
+  float: right;
+  width: 49%;
+  height: 430px;
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  padding: 4px;
+}
+.rituais {
+  width: 100%;
+  height: 100%;
+}
+.rituais h3 {
+  text-align: center;
+}
+.rituais .editor {
+  height: 93%;
+}
+.rituais .rdescricao {
+  height: 450px;
+  width: 100%;
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  float: right;
+  padding: 4px;
+}
+.diario h3 {
+  text-align: center;
+}
+.diario .editor {
+  height: 86%;
+}
+.diario .diarioHistoria {
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  float: right;
+  width: 59.5%;
+  height: 225px;
+  margin-bottom: 7px;
+  padding: 4px;
+}
+.diario .diarioDescricao {
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  float: left;
+  width: 39.5%;
+  height: 225px;
+  margin-bottom: 7px;
+  padding: 4px;
+}
+.diario .diarioAnotacoes {
+  border: 1px solid #a9a6a6;
+  border-radius: 2px;
+  float: left;
+  width: 100%;
+  height: 225px;
+  padding: 4px;
+}

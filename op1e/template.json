@@ -1,0 +1,175 @@
+{
+    "Actor": {
+        "types": [
+            "agente",
+            "monstro"
+        ],
+        "templates": {
+            "atributosComuns": {
+                "pv": {
+                    "value": 10,
+                    "min": 0,
+                    "max": 10,
+                    "tmp": 0
+                },
+                "sn": {
+                    "value": 10,
+                    "min": 0,
+                    "max": 10,
+                    "tmp": 0
+                },
+                "pe": {
+                    "value": 10,
+                    "min": 0,
+                    "max": 10,
+                    "tmp": 0
+                },
+                "pas": 10,
+                "esq": 15,
+                "desl": 9
+            }
+        },
+        "agente": {
+            "templates": [
+                "atributosComuns",
+                "atributos"
+            ],
+            "nex": "0%",
+            "ori": "Origem",
+            "cla": "Classe",
+            "tri": "Trilha",
+            "pat": "Patente",
+            "idade": "Adulto",
+            "desl": "9m",
+            "resis": "Dano: 5",
+            "proeficiencias": "Armas Simples",
+            "credito": "Baixo",
+            "pericias": {
+                "acroTreino": 0,
+                "acroOutro": 0,
+                "adesTreino": 0,
+                "adesOutro": 0,
+                "arteTreino": 0,
+                "arteOutro": 0,
+                "atleTreino": 0,
+                "atleOutro": 0,
+                "atuaTreino": 0,
+                "atuaOutro": 0,
+                "cienTreino": 0,
+                "cienOutro": 0,
+                "crimTreino": 0,
+                "crimOutro": 0,
+                "diplTreino": 0,
+                "diplOutro": 0,
+                "engaTreino": 0,
+                "engaOutro": 0,
+                "fortTreino": 0,
+                "fortOutro": 0,
+                "furtTreino": 0,
+                "furtOutro": 0,
+                "inicTreino": 0,
+                "inicOutro": 0,
+                "intiTreino": 0,
+                "intiOutro": 0,
+                "intuTreino": 0,
+                "intuOutro": 0,
+                "inveTreino": 0,
+                "inveOutro": 0,
+                "lutaTreino": 0,
+                "lutaOutro": 0,
+                "mediTreino": 0,
+                "mediOutro": 0,
+                "oculTreino": 0,
+                "oculOutro": 0,
+                "percTreino": 0,
+                "percOutro": 0,
+                "piloTreino": 0,
+                "piloOutro": 0,
+                "pontTreino": 0,
+                "pontOutro": 0,
+                "profTreino": 0,
+                "profOutro": 0,
+                "reflTreino": 0,
+                "reflOutro": 0,
+                "reliTreino": 0,
+                "reliOutro": 0,
+                "sobrTreino": 0,
+                "sobrOutro": 0,
+                "tatiTreino": 0,
+                "tatiOutro": 0,
+                "tecnTreino": 0,
+                "tecnOutro": 0,
+                "vontTreino": 0,
+                "vontOutro": 0
+            },
+            "atributos": {
+                "agi": 1,
+                "vig": 1,
+                "int": 1,
+                "pre": 1,
+                "for": 1
+            },
+            "inventario": {
+                "limite": {
+                    "I": 0,
+                    "II": 0,
+                    "III": 0,
+                    "IV": 0
+                },
+                "prestigio": 0,
+                "cargaMax": 0,
+                "carga": 0,
+                "inventarioItens1": "Fuzil De Assalto",
+                "inventarioItens2": "Comp/M.L/Cal. Grosso",
+                "inventarioItens3": "2 / IV"
+            },
+            "podClasse": "",
+            "podParanormal": "",
+            "ritual": "",
+            "ritualDescricao": "",
+            "diarioHistoria": "",
+            "diarioDescricao": "",
+            "diarioAnotacoes": ""
+        }
+    },
+    "Item": {
+        "types": [
+            "equip_geral",
+            "armas",
+            "protecoes"
+        ],
+        "templates": {
+            "itens": {
+                "descricao": "Extras e Descrição",
+                "categoria": "I",
+                "espaco": 0,
+                "modificador": 0
+            }
+        },
+        "equip_geral": {
+            "templates": [
+                "itens"
+            ],
+            "equip_pericia": ""
+        },
+        "armas": {
+            "templates": [
+                "itens"
+            ],
+            "dano": "0",
+            "margem_ameaca": 0,
+            "critico": 0,
+            "alcance": "--",
+            "tipo": "",
+            "modificacoes": "Modificações feitas",
+            "cat_mun": "I",
+            "cenas": 0,
+            "esp_mun": 0
+        },
+        "protecoes": {
+            "templates": [
+                "itens"
+            ]
+        }
+    }
+}

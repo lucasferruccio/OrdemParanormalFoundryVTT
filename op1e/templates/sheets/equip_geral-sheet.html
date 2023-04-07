@@ -1,0 +1,52 @@
+<form class="item" autocomplete="off">
+
+    <head>
+        <link href="../op1e.css" rel="stylesheet">
+    </head>
+    <div>
+        <header class="sheet-header">
+            <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+            <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
+        </header>
+        <div class="item_body">
+            <table>
+                <tr>
+                    <th>Perícia:</th>
+                    <th>Modificador:</th>
+                    <th>Categoria:</th>
+                    <th>Espaço:</th>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="data.equip_pericia">
+                            {{#select data.equip_pericia}}
+                            {{#each config.pericias as |type name|}}
+                            <option value="{{type}}">{{name}}</option>
+                            {{/each}}
+                            {{/select}}
+                        </select>
+                    </td>
+                    <td>
+                        <input name="data.modificador" type="text" value="{{data.modificador}}" data-dtype="Number">
+                    </td>
+                    <td>
+                        <select name="data.categoria">
+                            {{#select data.categoria}}
+                            {{#each config.categorias as |name type|}}
+                            <option value="{{type}}"> {{name}}</option>
+                            {{/each}}
+                            {{/select}}
+                        </select>
+                    </td>
+                    <td>
+                        <input name="data.espaco" type="text" value="{{data.espaco}}" data-dtype="Number">
+                    </td>
+                </tr>
+            </table>
+            <div>
+                {{editor content=data.descricao target="data.descricao" button=true editable=editable}}
+            </div>
+
+        </div>
+    </div>
+</form>

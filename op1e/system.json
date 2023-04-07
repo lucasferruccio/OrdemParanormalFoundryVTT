@@ -1,0 +1,34 @@
+{
+    "id": "op1e",
+    "title": "Ordem Paranormal RPG",
+    "description": "Um sistema para Jogar Ordem Paranormal um RPG de ação",
+    "version": "0.0.1",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10",
+        "maximum": "10"
+    },
+    "esmodules": [
+        "op1e.js"
+    ],
+    "styles": [
+        "op1e.css"
+    ],
+    "authors": [
+        {
+            "name": "Lucas Paiva"
+        }
+    ],
+    "languages": [
+        {
+            "lang": "pt",
+            "name": "Português Brasileiro",
+            "path": "lang/pt.json"
+        }
+    ],
+    "initiative": "(@atributos.agi)d20kh1 + @pericias.inicTreino + @pericias.inicOutro",
+    "gridDistance": 1.5,
+    "gridUnits": "m",
+    "primaryTokenAttribute": "atributosComuns.pv",
+    "secondaryTokenAttribute": "atributosComuns.sn"
+}

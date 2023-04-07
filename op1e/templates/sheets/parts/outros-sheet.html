@@ -1,0 +1,14 @@
+<div class="outros">
+    <div class="caracteristicas">
+        <h3><strong>Caractrísticas</strong>:</h3>
+        <b>Idade:</b> <input name="data.idade" type="text" value="{{data.idade}}">
+        <hr>
+        <b>Deslocamento:</b> <input name="data.desl" type="text" value="{{data.desl}}">
+        <hr>
+        <b>Resistências:</b> {{editor content=data.resis target="data.resis" button=true editable=editable}}
+    </div>
+    <div class="proficiencias">
+        <h3><strong>Proficiências</strong>:</h3>
+        {{editor content=data.proeficiencias target="data.proeficiencias" button=true editable=editable}}
+    </div>
+</div>

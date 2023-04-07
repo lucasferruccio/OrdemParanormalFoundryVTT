@@ -1,0 +1,14 @@
+<div class="diario">
+    <div class="diarioDescricao">
+        <h3><b>Descrição:</b></h3>
+        {{editor content=data.diarioHistoria target="data.diarioHistoria" button=true editable=editable}}
+    </div>
+    <div class="diarioHistoria">
+        <h3><b>História:</b></h3>
+        {{editor content=data.diarioDescricao target="data.diarioDescricao" button=true editable=editable}}
+    </div>
+    <div class="diarioAnotacoes">
+        <h3><b>Anotações:</b></h3>
+        {{editor content=data.diarioAnotacoes target="data.diarioAnotacoes" button=true editable=editable}}
+    </div>
+</div>

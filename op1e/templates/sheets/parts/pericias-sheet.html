@@ -1,0 +1,25 @@
+<ul class="periciasLista" style="list-style: none;">
+    <div class="nome">
+        <strong>Perícias:</strong>
+    </div>
+    <div class=" mod">
+        <strong>Treino:</strong>
+        <strong>Outros:</strong>
+    </div>
+    {{#each config.pericias as |atributo pericia|}}
+    <li>
+        <div class="pericia">
+            <div class="nome"><a class="rollable"
+                    data-roll="{{lookup ../data atributo.[0]}}d20kh1+{{lookup ../data.pericias atributo.[1]}}+{{lookup ../data.pericias atributo.[2]}}"
+                    data-label="{{pericia}}:">{{pericia}}</a>
+            </div>
+            <div class="mod">
+                <input name="data.pericias.{{atributo.[1]}}" type="text"
+                    value="{{lookup ../data.pericias atributo.[1]}}" data-dtype="Number">
+                <input name="data.pericias.{{atributo.[2]}}" type="text"
+                    value="{{lookup ../data.pericias atributo.[2]}}" data-dtype="Number" />
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>

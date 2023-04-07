@@ -1,0 +1,41 @@
+{
+  "name": "Espingarda",
+  "type": "armas",
+  "img": "icons/weapons/guns/gun-double-barrel.webp",
+  "system": {
+    "descricao": "<p>Arma de fogo longa e com cano liso. A espingarda causa apenas metade do dano em alcance&nbsp; m&eacute;dio ou maior.</p>\n<ul>\n<li>Calibre Grosso: Aumenta o dano em mais um dado do mesmo tipo.</li>\n<li>Mira Laser: +2 em margem de amea&ccedil;a.</li>\n<li>Dum dum: +1 em multiplicador de cr&iacute;tico</li>\n</ul>",
+    "categoria": "III",
+    "espaco": 2,
+    "modificador": 0,
+    "dano": "5d6",
+    "margem_ameaca": 18,
+    "critico": 4,
+    "alcance": "c",
+    "tipo": "bal",
+    "modificacoes": "<p>Arma de fogo longa e com cano liso. A espingarda causa apenas metade do dano em alcance&nbsp; m&eacute;dio ou maior.</p>\n<p><span style=\"font-family: var(--font-primary); font-size: var(--font-size-14);\">Calibre Grosso: Aumenta o dano em mais um dado do mesmo tipo.</span></p>\n<ul>\n<li>Mira Laser: +2 em margem de amea&ccedil;a.</li>\n<li>Dum dum: +1 em multiplicador de cr&iacute;tico</li>\n</ul>",
+    "cat_mun": "II",
+    "cenas": 3,
+    "esp_mun": 2,
+    "alcances": ""
+  },
+  "effects": [],
+  "flags": {
+    "core": {
+      "sourceId": "Item.SVuwVFIt25N2yqf1"
+    },
+    "exportSource": {
+      "world": "testando",
+      "system": "op1e",
+      "coreVersion": "10.291",
+      "systemVersion": "0.0.1"
+    }
+  },
+  "_stats": {
+    "systemId": "op1e",
+    "systemVersion": "0.0.1",
+    "coreVersion": "10.291",
+    "createdTime": 1679347945340,
+    "modifiedTime": 1679358063959,
+    "lastModifiedBy": "C7d7BtGg2nEXpvOu"
+  }
+}

@@ -1,0 +1,70 @@
+<div class="header">
+    <img class="profile" src="{{actor.img}}" title="{{actor.name}}" data-edit="img" />
+    <section class="headerInfo">
+        <div class="firstRowHeader">
+            <h1 class="charName" style="border: none;">
+                <input name="name" type="text" value="{{actor.name}}" placeholder="Nome do Agente" />
+            </h1>
+            <div class="nex">
+                <h2 style="margin-bottom: 0px; border: none;">Nex: <input name="data.nex" type="text"
+                        value="{{data.nex}}" style="width: 50px; border: none; background: rgba(0, 0, 0, 0);">
+                </h2>
+            </div>
+        </div>
+        <div class="secondRowHeader">
+            <input class="clearInput" name="data.ori" type="text" value="{{data.ori}}">
+            <input class="clearInput" name="data.cla" type="text" value="{{data.cla}}">
+            <input class="clearInput" name="data.tri" type="text" value="{{data.tri}}">
+            <input class="clearInput" name="data.pat" type="text" value="{{data.pat}}">
+        </div>
+        <div class="thirdRowHeader">
+            <div class="status">
+                <span class="outroName">Pontos de Vida</span>
+                <hr class="linha">
+                <p>
+                    <input class="inputBox" name="data.pv.value" type="text" value="{{data.pv.value}}"
+                        data-dtype="Number">
+                    /
+                    <input class="inputBox" name="data.pv.max" type="text" value="{{data.pv.max}}" data-dtype="Number">
+                </p>
+                <P><input class="inputBox" name="data.pv.tmp" type="text" value="{{data.pv.tmp}}" data-dtype="Number">
+                </P>
+            </div>
+            <div class="status">
+                <span class="outroName">Sanidade</span>
+                <hr class="linha">
+                <p>
+                    <input class="inputBox" name="data.sn.value" type="text" value="{{data.sn.value}}"
+                        data-dtype="Number">
+                    /
+                    <input class="inputBox" name="data.sn.max" type="text" value="{{data.sn.max}}" data-dtype="Number">
+                </p>
+                <P><input class="inputBox" name="data.sn.tmp" type="text" value="{{data.sn.tmp}}" data-dtype="Number">
+                </P>
+            </div>
+            <div class="status">
+                <span class="outroName">Pontos De Esforço</span>
+                <hr class="linha">
+                <p>
+                    <input class="inputBox" name="data.pe.value" type="text" value="{{data.pe.value}}"
+                        data-dtype="Number">
+                    /
+                    <input class="inputBox" name="data.pe.max" type="text" value="{{data.pe.max}}" data-dtype="Number">
+                </p>
+                <P><input class="inputBox" name="data.pe.tmp" type="text" value="{{data.pe.tmp}}" data-dtype="Number">
+                </P>
+            </div>
+            <div class="status" style="border: none;">
+                <div class="outroName">Defesas</div>
+                <hr class="linha">
+                <p>
+                    Passiva:<input class="inputBox" name="data.pas" type="text" value="{{data.pas}}"
+                        data-dtype="Number">
+                </p>
+                <p>
+                    Esquiva:<input class="inputBox" name="data.esq" type="text" value="{{data.esq}}"
+                        data-dtype="Number">
+                </p>
+            </div>
+    </section>
+</div>

@@ -1,0 +1,112 @@
+<form class="item" autocomplete="off">
+
+    <head>
+        <link href="../op1e.css" rel="stylesheet">
+        <script src="../op1e.js"></script>
+    </head>
+    <div>
+        <header class="sheet-header">
+            <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+            <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'Name' }}" /></h1>
+        </header>
+        <hr>
+
+        <nav class="tabs" data-group="primary-tabs">
+            <a class="item" data-tab="tab1" data-group="primary-tabs"><strong>Visão Geral:</strong>
+                </li>
+            </a>
+            <a class="item" data-tab="tab2" data-group="primary-tabs"><strong>Modificação para Armas:</strong>
+                </li>
+            </a>
+        </nav>
+
+        <section class="content">
+            <div class="tab" data-tab="tab1" data-group="primary-tabs">
+                <table>
+                    <h3><strong>Arma:</strong></h3>
+                    <tr>
+                        <th>Categoria:</th>
+                        <th>Dano:</th>
+                        <th>Crítico:</th>
+                        <th>Alcance:</th>
+                        <th>Tipo:</th>
+                        <th>Espaços:</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select name="data.categoria">
+                                {{#select data.categoria}}
+                                {{#each config.categorias as |name type|}}
+                                <option value="{{type}}"> {{name}}</option>
+                                {{/each}}
+                                {{/select}}
+                            </select>
+                        </td>
+                        <td>
+                            <input name="data.dano" type="text" value="{{data.dano}}">
+                        </td>
+                        <td class="crit1">
+                            <input class="inputBox" name="data.margem_ameaca" type="text" value="{{data.margem_ameaca}}"
+                                data-dtype="Number">
+                            / x <input class="inputBox" name="data.critico" type="text" value="{{data.critico}}"
+                                data-dtype="Number">
+                        </td>
+                        <td>
+                            <select name="data.alcance">
+                                {{#select data.alcance}}
+                                {{#each config.alcances as |name type|}}
+                                <option value="{{type}}"> {{name}}</option>
+                                {{/each}}
+                                {{/select}}
+                            </select>
+                        </td>
+                        <td>
+                            <select name="data.tipo">
+                                {{#select data.tipo}}
+                                {{#each config.tipos_danos as |name type|}}
+                                <option value="{{type}}"> {{name}}</option>
+                                {{/each}}
+                                {{/select}}
+                            </select>
+                        </td>
+                        <td>
+                            <input name="data.espaco" type="text" value="{{data.espaco}}" data-dtype="Number">
+                        </td>
+                        <td>
+
+                        </td>
+                    </tr>
+                </table>
+                <hr>
+                <table>
+                    <tr>
+                        <h3><strong>Munição:</strong></h3>
+                    </tr>
+                    <tr>
+                        <th>
+                            Categoria:
+                            <select name="data.cat_mun">
+                                {{#select data.cat_mun}}
+                                {{#each config.categorias as |name type|}}
+                                <option value="{{type}}"> {{name}}</option>
+                                {{/each}}
+                                {{/select}}
+                            </select>
+                        </th>
+                        <th>
+                            Cenas: <input class="inputBox" name="data.cenas" type="text" value="{{data.cenas}}"
+                                data-dtype="Number">
+                        </th>
+                        <th>Espaços: <input class="inputBox" name="data.esp_mun" type="text" value="{{data.esp_mun}}"
+                                data-dtype="Number"></th>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab" data-tab="tab2" data-group="primary-tabs">
+                <div class="descricao">
+                    {{editor content=data.modificacoes target="data.modificacoes" button=true editable=editable}}
+                </div>
+            </div>
+        </section>
+    </div>
+</form>

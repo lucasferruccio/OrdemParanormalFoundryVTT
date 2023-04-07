@@ -1,0 +1,38 @@
+<form class="{{cssClass}}" autocomplete="off">
+
+    {{!-- Header Sheet--}}
+    {{> "systems/op1e/templates/sheets/parts/header-sheet.html"}}
+
+    <nav class="tabs" data-group="primary-tabs">
+        <a class="item" data-tab="attributes" data-group="primary-tabs"><i class="fa-solid fa-file-invoice"></i>
+            Características</a>
+        <a class="item" data-tab="inventory" data-group="primary-tabs"><i class="fa-solid fa-suitcase-rolling"></i>
+            Inventário</a>
+        <a class="item" data-tab="powers" data-group="primary-tabs"><i class="fa-solid fa-bolt"></i> Poderes</a>
+        <a class="item" data-tab="effects" data-group="primary-tabs"><i class="fas fa-hand-holding-magic"></i>
+            Rituais</a>
+        <a class="item" data-tab="journal" data-group="primary-tabs"><i class="fas fa-book"></i> Diário</a>
+    </nav>
+
+    <hr>
+
+    <section class="content">
+        <div class="tab" data-group="primary-tabs" data-tab="attributes">
+            {{> "systems/op1e/templates/sheets/parts/atributos-sheet.html"}}
+            {{> "systems/op1e/templates/sheets/parts/pericias-sheet.html"}}
+            {{> "systems/op1e/templates/sheets/parts/outros-sheet.html"}}
+        </div>
+        <div class="tab" data-group="primary-tabs" data-tab="inventory">
+            {{> "systems/op1e/templates/sheets/parts/inventario-sheet.html"}}
+        </div>
+        <div class="tab" data-group="primary-tabs" data-tab="powers">
+            {{> "systems/op1e/templates/sheets/parts/poderes-sheet.html"}}
+        </div>
+        <div class="tab" data-group="primary-tabs" data-tab="effects">
+            {{> "systems/op1e/templates/sheets/parts/rituais-sheet.html"}}
+        </div>
+        <div class="tab" data-group="primary-tabs" data-tab="journal">
+            {{> "systems/op1e/templates/sheets/parts/diario-sheet.html"}}
+        </div>
+    </section>
+</form>

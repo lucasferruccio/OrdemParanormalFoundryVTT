@@ -1,0 +1,49 @@
+{
+    "op1e": {
+        "pericias": {
+            "none": "",
+            "acro": "Acrobacia",
+            "ades": "Adestramento",
+            "arte": "Artes",
+            "atle": "Atletismo",
+            "atua": "Atualidades",
+            "cien": "Ciências",
+            "crim": "Crime",
+            "dipl": "Diplomacia",
+            "enga": "Enganação",
+            "fort": "Fortitude",
+            "furt": "Furtividade",
+            "inic": "Iniciativa",
+            "inti": "Intimidação",
+            "intu": "Intuição",
+            "inve": "Investigação",
+            "luta": "Luta",
+            "medi": "Medicina",
+            "ocul": "Ocultismo",
+            "perc": "Percepção",
+            "pilo": "Pilotagem",
+            "pont": "Pontaria",
+            "prof": "Profissão",
+            "refl": "Reflexos",
+            "reli": "Religião",
+            "sobr": "Sobrevivência",
+            "tati": "Tática",
+            "tecn": "Tecnologia",
+            "vont": "Vontade"
+        },
+        "templates": {
+            "informacoes": {
+                "descricao": "Descrição",
+                "categoria": "Categoria",
+                "espaco": "Espaço",
+                "pericia": "Perícia",
+                "modificador": "Modificador"
+            }
+        },
+        "equip_geral": {
+            "templates": [
+                "informacoes"
+            ]
+        }
+    }
+}

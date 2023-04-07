@@ -1,0 +1,35 @@
+<div class="inventario">
+    <div class="invHeader">
+        <div class="limite">
+            <b>Limite Dos Itens: </b>
+            <b>I- </b> <input name="data.I" type="text" value="{{data.I}}" data-dtype="Number">
+            <b>II- </b> <input name="data.II" type="text" value="{{data.II}}" data-dtype="Number">
+            <b>III- </b> <input name="data.III" type="text" value="{{data.III}}" data-dtype="Number">
+            <b>IV- </b> <input name="data.IV" type="text" value="{{data.IV}}" data-dtype="Number">
+            <b>Limite de Crédito- </b> <input style="width: 60px;" name="data.credito" type="text"
+                value="{{data.credito}}">
+            <b>Pontos de Prestígio- </b> <input name="data.prestigio" type="text" value="{{data.prestigio}}"
+                data-dtype="Number">
+            <b>Carga- </b> <input name="data.carga" type="text" value="{{data.carga}}" data-dtype="Number">/ <input
+                name="data.cargaMax" type="text" value="{{data.cargaMax}}" data-dtype="Number">
+        </div>
+        <div class="itens">
+            <h3><strong>Items:</strong></h3>
+            <div class="inv1">
+                <h4>Nome:</h4>
+                <hr>
+                {{editor content=data.inventarioItens1 target="data.inventarioItens1" button=true editable=editable}}
+            </div>
+            <div class="inv2">
+                <h4>Detalhes:</h4>
+                <hr>
+                {{editor content=data.inventarioItens2 target="data.inventarioItens2" button=true editable=editable}}
+            </div>
+            <div class="inv3">
+                <h4>Espaços: / Prestígio:</h4>
+                <hr>
+                {{editor content=data.inventarioItens3 target="data.inventarioItens3" button=true editable=editable}}
+            </div>
+        </div>
+    </div>
+</div>
